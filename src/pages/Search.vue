@@ -1,18 +1,26 @@
 <template>
   <div class="ion-page">
+    Search page
     <ion-content class="ion-padding">
-      <h1>About page</h1>
-      <img alt="Vue logo" src="../assets/logo.png">
-      <br />
       <ion-button v-on:click="navigator()" color="primary">Back</ion-button>
+      <br />
+      <ion-button v-on:click="openCamera()" color="primary">Open camera</ion-button>
+      <br />
+      <ion-button v-on:click="openMedia()" color="primary">Open media</ion-button>
     </ion-content>
   </div>
 </template>
 
 <script>
 export default {
-  name: "about",
+  name: "search",
   methods: {
+    openMedia() {
+
+    },
+    openCamera() {
+
+    },
     navigator() {
       this.$router.go(-1)
     }

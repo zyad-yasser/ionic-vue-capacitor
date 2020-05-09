@@ -6,6 +6,9 @@
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "ionic:build": "vue-cli-service build",
+    "ionic:serve": "vue-cli-service serve",
+    "run:android": "ionic capacitor run android --livereload --host=192.168.1.15 --port=8100 --consolelogs",
+    "run:ios": "ionic capacitor run ios --livereload --host=192.168.1.13 --port=8100",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

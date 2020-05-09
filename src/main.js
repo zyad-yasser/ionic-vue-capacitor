@@ -5,6 +5,7 @@ import store from './store'
 import './plugins'
 import Ionic from '@ionic/vue';
 import '@ionic/core/css/ionic.bundle.css';
+import '@/assets/font-css/line-icons.css';
 import './styles/styles.sass';
 
 Vue.use(Ionic);

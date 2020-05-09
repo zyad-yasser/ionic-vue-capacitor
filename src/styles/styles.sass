@@ -1,0 +1,35 @@
+\:root
+    --main-color: #00c6c6
+$base-shadow: rgba(0, 0, 0, 0.12);
+$purple-shadow-from: rgba(0, 198, 198, 0.42);
+$purple-shadow-to: rgba(0, 198, 198, 0.2);
+$purple-box-shadow:  0 14px 26px -12px $purple-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $purple-shadow-to;
+.plt-ios
+    .ion-page
+        padding-top: 44px
+.plt-android
+    .ion-page
+        padding-top: 56px
+.plus-button
+    position: absolute
+    width: 55px !important
+    height: 55px !important
+    background-color: var(--main-color)
+    top: -25px
+    color: #FFF
+    border-radius: 50% !important
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: $purple-box-shadow
+ion-tab-bar
+    contain: none
+    position: relative
+ion-tab-button
+    i
+        font-size: 18px !important
+        &.active
+            color: var(--main-color)
+    ion-badge
+        left: 55% !important
+        top: 10px

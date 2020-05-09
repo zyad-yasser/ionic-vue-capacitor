@@ -1,9 +1,23 @@
 {
     "parserOptions": {
+        "ecmaVersion": 6,
         "parser": "babel-eslint",
-        "sourceType": "module"
+        "sourceType": "module",
+        "allowImportExportEverywhere": true
+    },
+    "env": { 
+        "es6": true,
+        "node": true,
+        "commonjs": true
     },
     "rules": {
         "no-unused-vars": "off"
-    }
+    },
+    "extends": [
+        "plugin:vue/essential",
+        "eslint:recommended"
+    ],
+    "plugins": [
+        "vue"
+    ]
 }
