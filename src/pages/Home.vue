@@ -1,7 +1,7 @@
 <template>
   <div class="ion-page">
     <ion-content class="ion-padding">
-      <h1>Welcome To @ionic/vue 7</h1>
+      <h1>Welcome To @ionic/vue 8</h1>
       <i class="lni lni-close"></i>
       <img alt="Vue logo" src="../assets/logo.png">
       <br />

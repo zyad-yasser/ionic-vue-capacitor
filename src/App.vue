@@ -20,11 +20,23 @@
           <i class="lni lni-pencil"></i>
         </div>
 
-        <ion-tab-button @click="setActiveTab(index)" v-for="(tab, index) of tabs" :key="index" :tab="tab.tabName" :to="{ name: tab.routeName }">
-          <i :class="'lni lni-' + tab.icon + ($store.getters['main/activeTab']=== index ? ' active' : '')"></i>
+        <ion-tab-button
+          @click="setActiveTab(index)"
+          v-for="(tab, index) of tabs"
+          :key="index"
+          :tab="tab.tabName"
+          :to="{ name: tab.routeName }"
+          :class="!tab.routeName ? 'no-event': ''"
+        >
+          <i
+            :class="
+              'lni lni-' +
+                tab.icon +
+                ($store.getters['main/activeTab'] === index ? ' active' : '')
+            "
+          ></i>
           <ion-badge v-if="tab.withBadge">6</ion-badge>
         </ion-tab-button>
-
       </ion-tab-bar>
     </template>
   </ion-tabs>
@@ -80,7 +92,8 @@ export default {
   },
   methods: {
     setActiveTab(index) {
-      this.$store.commit('main/SET_ACTIVE_TAB', index, { root: true })
+      console.log(index)
+      this.$store.commit("main/SET_ACTIVE_TAB", index, { root: true });
     },
     afterTabChange() {},
     beforeTabChange() {},
