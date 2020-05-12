@@ -5,7 +5,7 @@
   >
     <ion-header>
       <ion-toolbar>
-        <ion-title>Hello World</ion-title>
+        <ion-title>Ionic / Vue</ion-title>
       </ion-toolbar>
     </ion-header>
     <transition name="slide-fade">

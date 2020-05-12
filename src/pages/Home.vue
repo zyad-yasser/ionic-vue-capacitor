@@ -1,8 +1,8 @@
 <template>
   <div class="ion-page">
-    <ion-content class="ion-padding">
+    <ion-content class="ion-padding ion-text-center">
       <h1>Welcome To @ionic/vue 8</h1>
-      <i class="lni lni-close"></i>
+      <!-- <i class="lni lni-close"></i> -->
       <img alt="Vue logo" src="../assets/logo.png">
       <br />
       <router-link to="/about">

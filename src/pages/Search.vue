@@ -4,7 +4,7 @@
     <ion-content class="ion-padding">
       <img width="100%" :src="image" >
       <br>
-      <input type="file" ref="filePicker" accept="image/*" @change="onFileChoose($event)"/>
+      <input class="no-view" type="file" ref="filePicker" accept="image/*" @change="onFileChoose($event)"/>
       <br>
       <ion-button v-on:click="navigator()" color="primary">Back</ion-button>
       <br />
@@ -53,3 +53,8 @@ export default {
   }
 };
 </script>
+
+<style lang="sass" scoped>
+  .no-view
+    display: none
+</style>
