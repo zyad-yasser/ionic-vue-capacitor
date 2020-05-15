@@ -3,11 +3,7 @@
     @IonTabsWillChange="beforeTabChange"
     @IonTabsDidChange="afterTabChange"
   >
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Ionic / Vue</ion-title>
-      </ion-toolbar>
-    </ion-header>
+    <HeaderComponent />
     <transition name="slide-fade">
       <router-view />
     </transition>
@@ -79,6 +75,7 @@
 
 <script>
 import Home from "./pages/Home";
+import HeaderComponent from "./components/header/header.component";
 import {
   Plugins,
   PushNotification,
@@ -88,7 +85,7 @@ import {
 const { PushNotifications } = Plugins;
 export default {
   components: {
-    // Home,
+    HeaderComponent
   },
   methods: {
     setActiveTab(index) {

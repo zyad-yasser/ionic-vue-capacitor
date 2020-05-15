@@ -19,7 +19,7 @@ export default new IonicVueRouter({
     {
       path: '/home',
       name: 'Home',
-      component: Home
+      component: Home,
     },
     {
       path: '/about',
