@@ -10,7 +10,7 @@
       <br />
       <ion-button v-on:click="openCamera()" color="primary">Open camera</ion-button>
       <br />
-      <ion-button v-on:click="openMedia()" color="primary">Open media</ion-button>
+      <ion-button @click="openMedia()" color="primary">Open media</ion-button>
     </ion-content>
   </div>
 </template>
@@ -35,6 +35,7 @@ export default {
       reader.readAsDataURL(event.target.files[0]);
     },
     openMedia() {
+      console.log("s")
       this.$refs['filePicker'].click();
     },
     async openCamera() {

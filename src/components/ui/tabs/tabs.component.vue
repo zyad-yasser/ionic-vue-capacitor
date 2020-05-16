@@ -42,6 +42,9 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.render-area
+  height: calc(100vh - 140px)
+  overflow-y: scroll
 .tabs-area
     margin-top: 5px
     width: calc(100% - 30px)
