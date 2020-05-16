@@ -8,13 +8,14 @@
     "ionic:build": "vue-cli-service build",
     "ionic:serve": "vue-cli-service serve",
     "run:android": "ionic capacitor run android --livereload --host=192.168.1.15 --port=8100 --consolelogs",
-    "run:ios": "ionic capacitor run ios --livereload --host=192.168.1.13 --port=8100",
+    "run:ios": "ionic capacitor run ios --livereload --host=192.168.1.16 --port=8100 --consolelogs",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@capacitor/android": "^2.0.2",
     "@capacitor/cli": "^2.0.2",
     "@capacitor/core": "^2.0.2",
+    "@capacitor/ios": "^2.0.2",
     "@ionic/vue": "0.0.4",
     "@rdlabo/capacitor-facebook-login": "^2.0.3",
     "axios": "^0.19.2",

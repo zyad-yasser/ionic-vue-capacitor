@@ -6,7 +6,6 @@ $base-shadow: rgba(0, 0, 0, 0.12);
 $purple-shadow-from: rgba(0, 198, 198, 0.42);
 $purple-shadow-to: rgba(0, 198, 198, 0.2);
 $purple-box-shadow:  0 14px 26px -12px $purple-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $purple-shadow-to;
-
 *
     font-family: 'Lato', sans-serif
 .header-md
@@ -36,7 +35,8 @@ ion-toolbar
         color: #999 !important
 .plt-ios
     .ion-page
-        padding-top: 61px
+        padding-top: calc(65px + env(safe-area-inset-top))
+        padding-top: calc(65px + constant(safe-area-inset-top))
 .plt-android
     .ion-page
         padding-top: 61px
